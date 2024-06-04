@@ -11,8 +11,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif']
-      }
+        sans: ["Poppins", "sans-serif"],
+      },
+      backgroundImage: {
+        "hero-section": "url('/public/assets/svg/hero-section.svg')",
+      },
     },
   },
   plugins: [],
