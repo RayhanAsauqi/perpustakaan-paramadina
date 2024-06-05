@@ -1,13 +1,13 @@
 import Layout from "../../Layout";
-import HeroSection from "../../components/HeroSection";
-import AboutUs from "../../components/AboutUs";
-import BookList from "../../components/BookList";
-import Category from "../../components/Category";
+import HeroSection from "../../components/pageComponent/HeroSection";
+import AboutUs from "../../components/pageComponent/AboutUs";
+import BookList from "../../components/pageComponent/BookList";
+import Category from "../../components/pageComponent/Category";
 
 const LandingPage = () => {
   return (
     // Layout navbar dan footer
-    <Layout>
+    <Layout >
       <HeroSection />
       <AboutUs />
       <BookList />

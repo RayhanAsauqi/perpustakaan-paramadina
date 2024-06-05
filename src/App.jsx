@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandinPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FormPeminjaman from "./pages/Peminjaman";
 import Discover from "./pages/Discover";
+import DiscoverDetail from "./pages/DiscoverDetail";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/peminjaman" element={<FormPeminjaman />} />
         <Route path="/discover" element={<Discover />} />
+        <Route path="/discover/detail" element={<DiscoverDetail />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
