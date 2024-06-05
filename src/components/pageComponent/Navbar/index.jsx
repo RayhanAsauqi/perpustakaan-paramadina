@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <section className="bg-[#006DB3] flex justify-between items-center px-16 ">
+      
       {/* Nav logo  */}
       <img
         src="../../../public/assets/svg/logo-parmadina.svg"

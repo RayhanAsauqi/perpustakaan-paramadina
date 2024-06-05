@@ -7,14 +7,14 @@ const HeroSection = () => {
       <div className="relative bg-hero-section bg-cover bg-center h-full min-h-screen">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
           {/* hero section content */}
-          <h1 className="text-4xl font-bold">PERPUSTAKAAN PARAMADINA</h1>
-          <p className="mt-4 text-lg font-bold text-[25px] px-[87px]">
+          <h1 className="text-4xl font-bold font-sans">PERPUSTAKAAN PARAMADINA</h1>
+          <p className="mt-4 text-lg font-bold text-[25px] px-[87px] font-sans">
             &quot;Selamat datang di perpustakaan online Universitas Paramadina,
             mari kita bersama-sama
             <br />
             menjelajahi dunia literasi! &quot;
           </p>
-          <button className="mt-6 px-6 py-3 bg-[#006DB3] hover:bg-blue-500 text-white font-semibold rounded-lg shadow-inner">
+          <button className="mt-6 px-6 py-3 bg-[#006DB3] hover:bg-blue-500 text-white font-semibold rounded-lg shadow-inner font-sans">
             Borrow
           </button>
         </div>

@@ -13,7 +13,7 @@ const CardDiscover = ({ dataBooks }) => {
             >
               <img src={item.image} alt="" />
               <div>
-                <h1 className="font-bold text-[25px] w-[368px] pb-[118px] ">
+                <h1 className="font-bold text-[25px] w-[368px] pb-[118px] font-sans">
                   {item.title}
                 </h1>
                 <div className="flex items-center">
@@ -21,14 +21,14 @@ const CardDiscover = ({ dataBooks }) => {
                     src="../../../public/assets/svg/discover/logoAuthor.svg"
                     alt=""
                   />
-                  <span>{item.author}</span>
+                  <span className="font-sans">{item.author}</span>
                 </div>
                 <div className="flex justify-end">
                   <Link
-                    to="/details"
+                    to="/discover/detail"
                     className="text-white bg-[#006DB3] rounded-[20px] mr-[27px]"
                   >
-                    <span className="py-1 px-[19.5px]">Details</span>
+                    <span className="py-1 px-[19.5px] font-sans">Details</span>
                   </Link>
                 </div>
               </div>
