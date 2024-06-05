@@ -1,0 +1,12 @@
+.react-datepicker__header {
+  background-color: transparent !important;
+}
+
+.custom-datepicker .react-datepicker__day-name,
+.custom-datepicker .react-datepicker__day {
+  color: white; /* Mengatur warna teks tanggal dan hari menjadi putih */
+}
+
+.custom-datepicker .react-datepicker__current-month {
+  color: white; /* Mengatur warna teks bulan menjadi putih */
+}
