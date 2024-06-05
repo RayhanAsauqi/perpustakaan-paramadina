@@ -3,15 +3,33 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <section className="bg-[#006DB3] flex justify-between items-center px-16 ">
-      <img src="../../../public/assets/svg/logo-parmadina.svg" alt="paramadina" />
+      {/* Nav logo  */}
+      <img
+        src="../../../public/assets/svg/logo-parmadina.svg"
+        alt="paramadina"
+      />
+      {/* Nav Menu */}
       <div className="list-none flex justify-center gap-[30px] py-[18px]">
-        <li className="py-[18.5px] text-white">Home</li>
-        <li className="py-[18.5px] text-white">Aboute Us</li>
-        <li className="py-[18.5px] text-white">History</li>
-        <li className="py-[18.5px] text-white">Category</li>
+        <Link to="/" className="py-[18.5px] text-white">
+          Home
+        </Link>
+        <Link to="/discover" className="py-[18.5px] text-white">
+          Books
+        </Link>
+        <Link to="/history" className="py-[18.5px] text-white">
+          History
+        </Link>
+        <Link to="/category" className="py-[18.5px] text-white">
+          Category
+        </Link>
       </div>
-
-      <Link to="/login" className="border bg-white rounded-[26px] py-[14.5px] px-[38.5px]">Sign In</Link>
+      {/* Nav button sign  */}
+      <Link
+        to="/login"
+        className="border bg-white rounded-[26px] py-[14.5px] px-[38.5px]"
+      >
+        Sign In
+      </Link>
     </section>
   );
 };
