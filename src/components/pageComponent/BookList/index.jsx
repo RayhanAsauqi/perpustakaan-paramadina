@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonSeeMore from "../ButtonSeeMore";
 
 // data sementara yang akan di munculkan ketika melakukan get API secara keseluruhan
@@ -41,6 +42,7 @@ const BookList = () => {
         <h1 className="font-semibold text-[50px]">Books</h1>
       </div>
       <div className="flex justify-center">
+        {/* Card list book */}
         <div className="grid grid-cols-3 gap-x-[60px] gap-y-[63px]">
           {DataBook.map((item, index) => (
             <div
@@ -50,9 +52,12 @@ const BookList = () => {
               <img src={item.image} alt="" className="" />
               <h1 className="text-center text-white">{item.title}</h1>
               <div className="pt-[50px] pb-[14px] flex justify-end">
-                <button className=" py-1 px-[18px] rounded-[20px] bg-white font-bold">
+                <Link
+                  to="/discover"
+                  className=" py-1 px-[18px] rounded-[20px] bg-white font-bold"
+                >
                   Borrow
-                </button>
+                </Link>
               </div>
             </div>
           ))}
