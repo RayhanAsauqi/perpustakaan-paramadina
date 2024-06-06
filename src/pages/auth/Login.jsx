@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="grid grid-cols-2 gap-24">
@@ -38,9 +40,11 @@ const Login = () => {
 
           {/* Sign In Button */}
           <div className="flex justify-center">
-            <button className="w-full bg-sky-900 rounded-xl py-2.5 text-white font-bold text-2xl hover:bg-sky-800 hover:shadow-xl">
-              Sign in
-            </button>
+            <Link to="/" className="w-full">
+              <button className="w-full bg-sky-900 rounded-xl py-2.5 text-white font-bold text-2xl hover:bg-sky-800 hover:shadow-xl">
+                Sign in
+              </button>
+            </Link>
           </div>
 
           {/* Google Sign In Button */}
@@ -54,9 +58,12 @@ const Login = () => {
             <p className="font-semibold text-sky-900 text-lg">
               Don’t have an account?
             </p>
-            <button className="underline font-bold text-sky-900 text-lg">
+            <Link
+              to="/register"
+              className="underline font-bold text-sky-900 text-lg"
+            >
               Register
-            </button>
+            </Link>
           </div>
         </div>
       </div>
