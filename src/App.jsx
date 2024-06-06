@@ -15,6 +15,7 @@ function App() {
         <Route path="/peminjaman" element={<FormPeminjaman />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/discover/detail" element={<DiscoverDetail />} />
+        <Route path="/discover/detail/form-peminjaman" element={<FormPeminjaman />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

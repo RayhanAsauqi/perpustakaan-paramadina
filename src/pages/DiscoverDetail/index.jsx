@@ -1,13 +1,11 @@
-
+import Layout from "../../Layout";
+import CardDetailDiscover from "../../components/pageComponent/CardDetailDiscover";
 
 const DiscoverDetail = () => {
-  
-
   return (
-    <div>
-      <h1>Discover Detail</h1>
-      
-    </div>
+    <Layout>
+      <CardDetailDiscover />
+    </Layout>
   );
 };
 
