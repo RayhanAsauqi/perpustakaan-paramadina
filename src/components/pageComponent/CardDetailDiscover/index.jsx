@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CardDetailDiscover = () => {
   return (
-    <div className="flex mx-[60px] py-[18px] px-[26px] gap-[136px] border rounded-[20px] drop-shadow-2xl shadow-inner">
+    <div className="flex mx-[60px] py-[18px] px-[26px] gap-[136px] border rounded-[20px] drop-shadow-2xl bg-white shadow-lg ">
       <img
         src="../../../public/assets/svg/discover/sejarah-dunia.svg"
         alt="discover detail"
