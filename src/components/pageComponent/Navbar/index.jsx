@@ -1,9 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const getLinkClass = (path) => {
+    return location.pathname === path ? 'py-[18.5px] text-black' : 'py-[18.5px] text-white';
+  };
+
   return (
     <section className="bg-[#006DB3] flex justify-between items-center px-16 ">
-      
       {/* Nav logo  */}
       <img
         src="../../../public/assets/svg/logo-parmadina.svg"
@@ -11,16 +16,16 @@ const Navbar = () => {
       />
       {/* Nav Menu */}
       <div className="list-none flex justify-center gap-[30px] py-[18px]">
-        <Link to="/" className="py-[18.5px] text-white">
+        <Link to="/" className={getLinkClass("/")}>
           Home
         </Link>
-        <Link to="/discover" className="py-[18.5px] text-white">
+        <Link to="/discover" className={getLinkClass("/discover")}>
           Books
         </Link>
-        <Link to="/history" className="py-[18.5px] text-white">
+        <Link to="/history" className={getLinkClass("/history")}>
           History
         </Link>
-        <Link to="/category" className="py-[18.5px] text-white">
+        <Link to="/category" className={getLinkClass("/category")}>
           Category
         </Link>
       </div>
