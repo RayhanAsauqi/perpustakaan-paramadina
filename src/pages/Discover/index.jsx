@@ -57,7 +57,7 @@ const dataBooks = [
 
 const Discover = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 10;
+  const totalPages = 50;
   return (
     <Layout>
       <CardDiscover dataBooks={dataBooks} />
