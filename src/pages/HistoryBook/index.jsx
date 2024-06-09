@@ -2,7 +2,7 @@ import Profile from "../../components/pageComponent/Profile";
 import History from "../../components/pageComponent/History";
 import Layout from "../../Layout";
 
-function HistoryBook() {
+const HistoryBook = () => {
   return (
     <div className="bg-[#F3F3F3] min-h-screen">
       <Layout>
@@ -30,6 +30,6 @@ function HistoryBook() {
       </Layout>
     </div>
   );
-}
+};
 
 export default HistoryBook;
