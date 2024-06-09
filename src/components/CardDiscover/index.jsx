@@ -18,7 +18,7 @@ const CardDiscover = ({ dataBooks }) => {
                 </h1>
                 <div className="flex items-center">
                   <img
-                    src="../../../public/assets/svg/discover/logoAuthor.svg"
+                    src="../../../public/assets/svg/discover/profile-author.svg"
                     alt=""
                   />
                   <span className="font-sans">{item.author}</span>
