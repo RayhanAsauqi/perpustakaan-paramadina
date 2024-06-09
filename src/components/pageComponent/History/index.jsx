@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Dropdown from "../../Dropdown";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-function History() {
+const History = () => {
   const historyData = [
     {
       id: 1,
@@ -65,7 +65,7 @@ function History() {
                 type="text"
                 placeholder="Search for history"
                 className="px-4 py-2 pr-10 rounded-lg text-black border-[#333333] bg-white outline-none w-[160px] border"
-                style={{ fontSize: '0.875rem' }} 
+                style={{ fontSize: "0.875rem" }}
               />
               <FontAwesomeIcon
                 icon={faSearch}
@@ -81,10 +81,18 @@ function History() {
           <thead>
             <tr className="border-b-2 border-gray-200">
               <th className="py-2 font-light text-sm text-[#828282]">No</th>
-              <th className="py-2 font-light text-sm text-[#828282]">Kode Buku</th>
-              <th className="py-2 font-light text-sm text-[#828282]">Nama Buku</th>
-              <th className="py-2 font-light text-sm text-[#828282]">Tanggal Pinjam</th>
-              <th className="py-2 font-light text-sm text-[#828282]">Tanggal Kembali</th>
+              <th className="py-2 font-light text-sm text-[#828282]">
+                Kode Buku
+              </th>
+              <th className="py-2 font-light text-sm text-[#828282]">
+                Nama Buku
+              </th>
+              <th className="py-2 font-light text-sm text-[#828282]">
+                Tanggal Pinjam
+              </th>
+              <th className="py-2 font-light text-sm text-[#828282]">
+                Tanggal Kembali
+              </th>
               <th className="py-2 font-light text-sm text-[#828282]">Denda</th>
               <th className="py-2 font-light text-sm text-[#828282]">Status</th>
             </tr>
@@ -92,12 +100,24 @@ function History() {
           <tbody>
             {historyData.map((item, index) => (
               <tr key={item.id}>
-                <td className="py-2 text-center text-sm font-light text-[]">{index + 1}</td>
-                <td className="py-2 text-center text-sm font-light text-[]">{item.code}</td>
-                <td className="py-2 text-center text-sm font-light text-[]">{item.name}</td>
-                <td className="py-2 text-center text-sm font-light text-[]">{item.borrowDate}</td>
-                <td className="py-2 text-center text-sm font-light text-[]">{item.returnDate}</td>
-                <td className="py-2 text-center text-sm font-light text-[]">{item.fine}</td>
+                <td className="py-2 text-center text-sm font-light text-[]">
+                  {index + 1}
+                </td>
+                <td className="py-2 text-center text-sm font-light text-[]">
+                  {item.code}
+                </td>
+                <td className="py-2 text-center text-sm font-light text-[]">
+                  {item.name}
+                </td>
+                <td className="py-2 text-center text-sm font-light text-[]">
+                  {item.borrowDate}
+                </td>
+                <td className="py-2 text-center text-sm font-light text-[]">
+                  {item.returnDate}
+                </td>
+                <td className="py-2 text-center text-sm font-light text-[]">
+                  {item.fine}
+                </td>
                 <div className="py-[9px]">
                   <td
                     className={`py-2 px-4 text-center font-medium text-xs rounded-full my-2 ${
@@ -118,6 +138,6 @@ function History() {
       </div>
     </div>
   );
-}
+};
 
 export default History;
