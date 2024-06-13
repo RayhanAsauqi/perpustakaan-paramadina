@@ -3,8 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const location = useLocation();
 
-  const getLinkClass = (path) => {
-    return location.pathname === path ? 'py-[18.5px] text-black' : 'py-[18.5px] text-white';
+  const getLinkClass = (paths) => {
+    return paths.includes(location.pathname)
+      ? "py-[18.5px] text-black"
+      : "py-[18.5px] text-white";
   };
 
   return (
@@ -19,9 +21,17 @@ const Navbar = () => {
         <Link to="/" className={getLinkClass("/")}>
           Home
         </Link>
-        <Link to="/discover" className={getLinkClass("/discover")}>
+        <Link
+          to="/discover"
+          className={getLinkClass([
+            "/discover",
+            "/discover/detail",
+            "/discover/detail/form-peminjaman",
+          ])}
+        >
           Books
         </Link>
+
         <Link to="/history" className={getLinkClass("/history")}>
           History
         </Link>

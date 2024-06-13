@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const CategorysCard = ({ data, title }) => {
   const additionalMarginTop =
@@ -11,7 +12,12 @@ const CategorysCard = ({ data, title }) => {
         >
           {title}
         </h1>
-        <button className="font-sans text-xl text-[#28B7D7] font-normal">View all</button>
+        <Link
+          to="/view all"
+          className="font-sans text-xl text-[#28B7D7] font-normal"
+        >
+          View all
+        </Link>
       </div>
       <div className="flex gap-10 justify-center mt-[30px]">
         {data.map((item, index) => (
