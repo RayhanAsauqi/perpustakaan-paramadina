@@ -18,7 +18,7 @@ const Navbar = () => {
       />
       {/* Nav Menu */}
       <div className="list-none flex justify-center gap-[30px] py-[18px]">
-        <Link to="/" className={getLinkClass("/")}>
+        <Link to="/" className={getLinkClass(["/"])}>
           Home
         </Link>
         <Link
@@ -32,10 +32,10 @@ const Navbar = () => {
           Books
         </Link>
 
-        <Link to="/history" className={getLinkClass("/history")}>
+        <Link to="/history" className={getLinkClass(["/history"])}>
           History
         </Link>
-        <Link to="/category" className={getLinkClass("/category")}>
+        <Link to="/category" className={getLinkClass(["/category"])}>
           Category
         </Link>
       </div>
