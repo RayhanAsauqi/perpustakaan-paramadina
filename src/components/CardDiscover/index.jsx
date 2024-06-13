@@ -9,7 +9,7 @@ const CardDiscover = ({ dataBooks }) => {
           {dataBooks.map((item, index) => (
             <div
               key={index}
-              className="flex border py-4 w-[572px] px-[30px] gap-5 rounded-[40px] drop-shadow shadow-bottom-right items-center"
+              className="flex border py-4 w-[572px] px-[30px] gap-5 rounded-[40px] drop-shadow shadow-custom-drop items-center"
             >
               <img src={item.image} alt="" />
               <div>

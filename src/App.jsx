@@ -6,6 +6,7 @@ import FormPeminjaman from "./pages/Peminjaman";
 import Discover from "./pages/Discover";
 import DiscoverDetail from "./pages/DiscoverDetail";
 import History from "./pages/HistoryBook";
+import Categorys from "./pages/Categorys";
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
         <Route path="/peminjaman" element={<FormPeminjaman />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/discover/detail" element={<DiscoverDetail />} />
-        <Route path="/discover/detail/form-peminjaman" element={<FormPeminjaman />} />
+        <Route
+          path="/discover/detail/form-peminjaman"
+          element={<FormPeminjaman />}
+        />
+        <Route path="/category" element={<Categorys />} />
         <Route path="/history" element={<History />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

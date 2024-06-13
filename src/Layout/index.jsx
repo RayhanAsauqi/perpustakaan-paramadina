@@ -9,25 +9,33 @@ import { useEffect, useState } from "react";
 const Layout = ({ children }) => {
   const location = useLocation();
   const [showDiscover, setDiscover] = useState(false);
+  const [categoryText, setCategoryText] = useState("");
 
   useEffect(() => {
     if (location.pathname === "/discover") {
       setDiscover(true);
+      setCategoryText("Discover");
+    } else if (location.pathname.startsWith("/category")) {
+      setDiscover(true);
+      const category = location.pathname.split("/")[2];
+      setCategoryText(`Category`);
+      return category;
     } else {
       setDiscover(false);
+      setCategoryText("");
     }
   }, [location]);
 
   return (
     <>
       <Navbar />
-      {location.pathname.startsWith("/discover") && (
+      {showDiscover && (
         <>
           <div className="flex items-center justify-between px-[60px]">
             <h1 className="font-bold text-[45px] pt-[27px] pb-[26px]">
-              Discover
+              {categoryText}
             </h1>
-            {showDiscover && (
+            {location.pathname === "/discover" && (
               <div className="flex items-center relative">
                 <input
                   type="text"
